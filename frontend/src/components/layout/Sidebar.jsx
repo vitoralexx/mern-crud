@@ -1,5 +1,8 @@
+//
 import React, { useState, useEffect, Fragment } from "react";
 import { useNavigate, useLocation, Link } from "react-router-dom";
+
+//
 import {
   LayoutDashboard,
   ClipboardCheck,
@@ -11,16 +14,11 @@ import {
   Menu,
   X,
 } from "lucide-react";
-
-
-
 import xoxo from "../../assets/xoxo.png";
 import Logout from "../../pages/auth/Logout";
 
-
 // import { Dialog, Transition } from "@headlessui/react";
 // import { XMarkIcon } from "@heroicons/react/24/outline";
-
 
 const Sidebar = () => {
   const navigate = useNavigate();
@@ -36,7 +34,6 @@ const Sidebar = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1280);
     };
-
     handleResize(); // initial check
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -50,9 +47,9 @@ const Sidebar = () => {
 
   const menuItems = [
     { icon: <LayoutDashboard />, label: "Dashboard", path: "/admindashboard" },
-    { icon: <ClipboardCheck />, label: "Tarefas", path: "/taskslist" },
+    { icon: <ClipboardCheck />, label: "Tasks", path: "/taskslist" },
     { icon: <CalendarDays />, label: "Agenda", path: "/agenda" },
-    { icon: <Users />, label: "Equipe", path: "/teamlist" },
+    { icon: <Users />, label: "Users", path: "/teamlist" },
     { icon: <Settings />, label: "Configurações", path: "/settings" },
     { icon: <Lightbulb />, label: "Sugestões", path: "/suggestions" },
     { icon: <LogOut />, label: "Sair", onClick: () => setIsLogoutOpen(true) },
@@ -98,12 +95,12 @@ const Sidebar = () => {
       {!isMobile && (
         <aside className="w-72 bg-white border-r border-gray-300 flex flex-col self-stretch min-h-screen h-full">
           <div
-            className="flex items-center pl-6 pt-10 pb-2 cursor-pointer"
+            className="flex items-center cursor-pointer"
             onClick={() => navigate("/admindashboard")}
           >
-            <div className="flex-1 flex items-center">
+            <div className="flex-1 flex items-center pt-10 pb-10">
               <div className="flex-1 flex justify-center items-center">
-                <img src={xoxo} alt="xoxo logo" className="w-32 h-auto" />
+                <img src={xoxo} alt="xoxo logo" className="w-50 h-auto" />
               </div>
             </div>
           </div>
@@ -129,10 +126,7 @@ const Sidebar = () => {
           </button>
 
           <div className="flex flex-col items-center mt-4 mb-4">
-            <img src={logoPmsj3} alt="PMSJ Logo" className="w-48 h-auto" />
-            <p className="text-gray-600 text-sm mt-2 text-center">
-              SGT - Sistema de Gestão de Tarefas
-            </p>
+            <img src={xoxo} alt="xoxo logo" className="w-48 h-auto" />
           </div>
 
           <nav className="flex flex-col space-y-4">

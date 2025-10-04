@@ -12,6 +12,7 @@ import AdminDashboard from './pages/dashboard/AdminDashboard';
 import TasksList from './pages/tasks/TasksList';
 import UserList from './pages/users/UserList';
 import CreateTask from './pages/tasks/CreateTask';
+import CreateUser from './pages/users/CreateUser';
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
           <Route path={"/tasks/create"} element={<CreateTask />} />
 
           {/* users */}
+          <Route path={"/users/create"} element={< CreateUser />} />
           <Route path={"/users/list"} element={< UserList />} />
 
           {/*  */}
