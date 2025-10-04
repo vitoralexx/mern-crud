@@ -1,6 +1,18 @@
+
+
+//
 import React from 'react'
+
+//
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+
+//
+import AdminDashboard from './pages/dashboard/AdminDashboard';
+import TasksList from './pages/tasks/TasksList';
+import UserList from './pages/users/UserList';
+import CreateTask from './pages/tasks/CreateTask';
+
 
 const App = () => {
   return (
@@ -9,9 +21,18 @@ const App = () => {
       <BrowserRouter>
         <Routes>
 
-          {/*  */}
-          <Route path={} element={ }>
+          {/* dash */}
+          <Route path={"/dashboard/admin "} element={ <AdminDashboard /> } />
 
+          {/* tasks */}
+          <Route path={"/tasks/list"} element={<TasksList />} />
+          <Route path={"/tasks/create"} element={<CreateTask />} />
+
+          {/* users */}
+          <Route path={"/users/list"} element={< UserList />} />
+
+          {/*  */}
+          <Route path={"/"} element={< AdminDashboard />} />
 
         </Routes>
       </BrowserRouter>
