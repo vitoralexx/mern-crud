@@ -1,11 +1,5 @@
 import mongoose from "mongoose";
 
-{/*
-  status do colaborador
-  atividades atribuidas a ele
-
-*/}
-
 const userSchema = new mongoose.Schema(
   {
     name: {
