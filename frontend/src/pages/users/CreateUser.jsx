@@ -122,9 +122,6 @@ const CreateUser = () => {
 
       {/* main-content-starts */}
       <main className="flex-1 p-6 lg:p-12 space-y-6">
-        <div className="flex-1 flex justify-end">
-          <BellRing />
-        </div>
         {/* welcome-starts */}
         <div className="flex sm:flex-row justify-between items-center sm:items-center mb-10">
           <div>
