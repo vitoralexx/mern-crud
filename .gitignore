@@ -1,1 +1,97 @@
+# =========================
+# Node.js / Express backend
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+logs/*.log
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+*.lcov
+
+# Runtime data
+tmp/
+temp/
+.cache/
+dist/
+build/
+.out/
+
+# =========================
+# React frontend (client)
+# =========================
+client/node_modules/
+client/build/
+client/.env
+client/.env.local
+client/.env.development.local
+client/.env.production.local
+client/.env.test.local
+client/.cache/
+client/dist/
+client/npm-debug.log*
+
+# =========================
+# IDEs / Editors
+# =========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# =========================
+# System files
+# =========================
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# =========================
+# Miscellaneous
+# =========================
+*.tgz
+*.bak
+*.tmp
+*.old
+*.orig
+*.log
+*.csv
+*.tsbuildinfo
+
+# =========================
+# Testing
+# =========================
+/coverage
+/.nyc_output
+jest-cache/
+jest-html-reporters-*
+test-results/
+
+# =========================
+# Production
+# =========================
+/build
+/.next
+/.nuxt
+/out
