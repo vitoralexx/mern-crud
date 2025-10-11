@@ -1,10 +1,10 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import connectDB from "./config/mongodb.js";
-import taskRouter from "./routes/taskRoutes.js";
-import userRouter from "./routes/userRoutes.js";
-import authRouter from "./routes/authRoutes.js";
+import connectDB from "./src/config/mongodb.js";
+import taskRouter from "./src/routes/taskRoutes.js";
+import userRouter from "./src/routes/userRoutes.js";
+import authRouter from "./src/routes/authRoutes.js";
 
 // app config
 const app = express();

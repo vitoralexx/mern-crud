@@ -34,6 +34,7 @@ import {
 } from "lucide-react";
 
 const TasksList = () => {
+
   //
   const navigate = useNavigate();
 
@@ -130,10 +131,13 @@ const TasksList = () => {
 
   return (
     <div className="md:flex min-h-screen bg-gray-100">
+
       <div>
         <Sidebar />
       </div>
+
       <main className="flex-1 lg:p-12 space-y-6 p-6">
+
         {/* welcome-starts */}
         <div className="flex sm:flex-row justify-between items-center sm:items-center mb-10 border-b border-gray-300 pb-10">
           <div>

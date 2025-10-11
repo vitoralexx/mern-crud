@@ -10,9 +10,12 @@ import toast from "react-hot-toast";
 import { BellRing } from "lucide-react";
 
 const CreateUser = () => {
+
+  //
   const fileInputRef = useRef(null);
   const navigate = useNavigate();
 
+  //
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [confirmEmail, setConfirmEmail] = useState("");

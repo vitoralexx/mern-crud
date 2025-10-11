@@ -1,0 +1,7 @@
+vitoralexse_db_user
+dSytoslkUr8LSotN
+
+--
+
+mongodb+srv://vitoralexse_db_user:dSytoslkUr8LSotN@mern-crud-practice.kl2yyff.mongodb.net/?retryWrites=true&w=majority&appName=mern-crud-practice
+

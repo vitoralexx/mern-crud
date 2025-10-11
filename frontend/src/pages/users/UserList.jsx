@@ -4,10 +4,9 @@ import { useNavigate, useParams } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 
 //
-import data from "../../data/dummyData";
 import Sidebar from "../../components/layout/Sidebar";
 import useUserStore from "../../store/useUserStore";
-import DeleteUserPopUp from "../team/DeleteUserPopUp";
+import DeleteUserPopUp from "../users/DeleteUserPopUp";
 
 //
 import {

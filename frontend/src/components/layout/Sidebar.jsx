@@ -46,12 +46,9 @@ const Sidebar = () => {
   };
 
   const menuItems = [
-    { icon: <LayoutDashboard />, label: "Dashboard", path: "/admindashboard" },
-    { icon: <ClipboardCheck />, label: "Tasks", path: "/taskslist" },
-    { icon: <CalendarDays />, label: "Agenda", path: "/agenda" },
-    { icon: <Users />, label: "Users", path: "/teamlist" },
-    { icon: <Settings />, label: "Configurações", path: "/settings" },
-    { icon: <Lightbulb />, label: "Sugestões", path: "/suggestions" },
+    { icon: <LayoutDashboard />, label: "Dashboard", path: "/dashboard/admin" },
+    { icon: <ClipboardCheck />, label: "Tasks", path: "/tasks/list" },
+    { icon: <Users />, label: "Users", path: "/users/list" },
     { icon: <LogOut />, label: "Sair", onClick: () => setIsLogoutOpen(true) },
   ];
 
